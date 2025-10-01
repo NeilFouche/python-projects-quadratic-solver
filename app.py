@@ -47,7 +47,7 @@ def index():
                 y = [a*(x**2) + b*x + c for x in domain]
 
                 plt.figure(figsize=(12,4))
-                plt.plot(domain, y, label=f"{a}x² + {b}x + {c}")
+                plt.plot(domain, y, label=f"{a}x² {'+' if b > 0 else '-'} {abs(b)}x {'+' if c > 0 else '-'} {abs(c)}")
                 plt.axhline(0, color='black', linewidth=0.5)
                 plt.axvline(0, color='black', linewidth=0.5)
                 plt.xlabel("x")
