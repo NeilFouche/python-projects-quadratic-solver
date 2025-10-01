@@ -23,15 +23,15 @@
         <div class="row g-3 mb-3">
           <div class="col-md-4 col-12">
             <label class="form-label" for="a">a:</label>
-            <input class="form-control" type="text" id="a" name="a" required>
+            <input class="form-control" type="text" id="a" name="a" value="{{a_input | default('')}}" required>
           </div>
           <div class="col-md-4 col-12">
             <label class="form-label" for="b">b:</label>
-            <input class="form-control" type="text" id="b" name="b" required>
+            <input class="form-control" type="text" id="b" name="b" value="{{b_input | default('')}}" required>
           </div>
           <div class="col-md-4 col-12">
             <label class="form-label" for="c">c:</label>
-            <input class="form-control" type="text" id="c" name="c" required>
+            <input class="form-control" type="text" id="c" name="c" value="{{c_input | default('')}}" required>
           </div>
         </div>
         <button class="btn btn-primary" type="submit">Solve</button>
