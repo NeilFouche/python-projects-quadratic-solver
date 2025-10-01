@@ -57,7 +57,7 @@ def index():
                 y = [a*(x**2) + b*x + c for x in domain]
 
                 # Construct equation according mathematical conventions
-                coefficients = [str(abs(input)) if input != 1 or i == 2 else '' for i, input in enumerate(inputs)] # drop coefficients = 1 unless constant
+                coefficients = [str(abs(input)) if abs(input) != 1 or i == 2 else '' for i, input in enumerate(inputs)] # drop coefficients = 1 unless constant
                 variables = ['x²', 'x', '']
                 signs = ['+' if coeff > 0 else '-' for coeff in inputs]
                 terms = [
